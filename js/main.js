@@ -31,7 +31,17 @@ showBtn('header__scroll-btn','header div:nth-child(2)', true);
 
 let adaptive = () => {
     let h = window.innerHeight,
-        w = window.innerWidth;
+        w = window.innerWidth,
+        vh = h / 100;
+
+    if (vh * 5.4 < (vh * 4.5) + 12){
+        $('.nav').css('top', '36px');
+        $('.header__nav-btn').css('top', '15px');
+    }
+    else {
+        $('.nav').css('top', 'calc(var(--vh, 1vh) * 5.4)');
+        $('.header__nav-btn').css('top', 'calc(var(--vh, 1vh) * 2.25)');
+    }
 
     if (h > 2.88*w){
         $('.gift .offer').css('padding-top', 'calc(var(--vh, 1vh) * 7.8)');
