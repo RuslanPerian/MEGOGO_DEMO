@@ -454,6 +454,7 @@ nav>ul>li>a:hover{
 }
 
 .pay .background{
+    background-image: none;
     background-color: #101010;
 }
 
