@@ -456,6 +456,12 @@ nav>ul>li>a:hover{
 .pay .background{
     background-image: none;
     background-color: #101010;
+    position: absolute;
+    z-index: 1;
+}
+
+.pay .offer{
+    z-index: 2;
 }
 
 .pay .offer__title{
