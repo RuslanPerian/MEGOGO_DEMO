@@ -116,7 +116,6 @@ nav{
     position: absolute;
     width: 100%;
     top: 36px;
-    top: calc(var(--vh, 1vh) * 5.4);
     z-index: 1;
     padding: 0 15px;
     padding: 0 4%;
