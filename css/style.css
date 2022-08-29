@@ -453,6 +453,10 @@ nav>ul>li>a:hover{
     padding-left: 4.27%;
 }
 
+.pay .background{
+    background-color: #101010;
+}
+
 .pay .offer__title{
     margin-bottom: 4.5%;
     margin-bottom: calc(var(--vh, 1vh) * 4.5);
