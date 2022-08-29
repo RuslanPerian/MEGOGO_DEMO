@@ -28,3 +28,21 @@ const showBtn = (btnClass, showItemClass, isSection) => {
 
 showBtn('header__nav-btn','header__nav', false);
 showBtn('header__scroll-btn','header div:nth-child(2)', true);
+
+let h = window.innerHeight,
+    w = window.innerWidth;
+
+if (h > 1.78*w){
+    $('.offer__title, .offer__text, .offer__table').css('width','95%');
+    $('.optimal .offer, .gift .offer').css('margin-top', 'calc(var(--vh, 1vh) * 10)');
+}
+
+window.addEventListener('resize', () => {
+    let h = window.innerHeight,
+    w = window.innerWidth;
+
+    if (h > 1.78*w){
+        $('.offer__title, .offer__text, .offer__table').css('width','95%');
+        $('.optimal .offer, .gift .offer').css('margin-top', 'calc(var(--vh, 1vh) * 10)');
+    }
+});
