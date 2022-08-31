@@ -35,11 +35,11 @@ let adaptive = () => {
         vh = h / 100;
 
     if (vh * 5.4 < (vh * 4.5) + 12){
-        $('.nav').css('top', '36px');
+        $('nav').css('top', '36px');
         $('.header__nav-btn').css('top', '15px');
     }
     else {
-        $('.nav').css('top', 'calc(var(--vh, 1vh) * 5.4)');
+        $('nav').css('top', 'calc(var(--vh, 1vh) * 5.4)');
         $('.header__nav-btn').css('top', 'calc(var(--vh, 1vh) * 2.25)');
     }
 
